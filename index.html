@@ -7,14 +7,16 @@
   <meta name="description" content="index" />
   <meta
     name="keywords"
-    content="2006, accesible, actuando, algunas, amplio, aporte, aquello, arte, aos, bienvenidos, cabeza, calidad, carencias, cinco, circense, circo, como, comunidad, con, concepto, conocer, contacto, cooperar, costo, de, dejando, del, desarrollo, diferentes, diseando, distancia, el, en, encuentra, enfasis, equilibrio, equipo, esta, estas, estos, eventos, evolucin, fabricando, general, graciosas, ha, hace, historia, implementos, inteligentes, interesantes, investigando, la, las, limite, links, lo, logrado, los, malabares, malabarismo, martillo, material, medio, movimientos, ms, necesidades, no, ofrecer, para, partir, pases, pedidos, pensando, por, positivo, presentan, productos, proponer, propuestas, proyectos, pueblito, puede, que, realizacin, remates, se, sean, ser, siempre, sin, sino, sobre, solo, soluciones, soando, sucursales, suramericanos, tambin, teatro, tema, tendencias, tengan, tiempo, todo, trabajando, tcnicas, un, varias, varios, viajando, ndole"
+    content="..."
   />
   <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   <style>
     html, body { margin: 0px; height: 100%; }
     #ruffle-container {
-      width: 828px; /* Match the original width */
-      height: 568px; /* Match the original height */
+      width: 80%; /* Adjust percentage as needed */
+      height: 80%; /* Adjust percentage as needed */
+      min-width: 828px; /* Optional: Minimum width to avoid it getting too narrow */
+      min-height: 568px; /* Optional: Minimum height */
       margin: 0 auto; /* Center the container */
     }
   </style>
@@ -27,7 +29,9 @@
       const player = ruffle.createPlayer();
       const container = document.getElementById("ruffle-container");
       container.appendChild(player);
-      player.load("index.swf"); // Path to your main SWF file
+      player.load("index.swf");
+      player.style.width = "100%";
+      player.style.height = "100%";
     });
   </script>
 </body>
